@@ -1,0 +1,60 @@
+<html>
+        <head>
+            <title>Registration</title>
+            <style>
+                input[required]:after {content: " *";}
+               input:Invalid {border: solid black ; }
+               input:valid{border: solid white} 
+               input:valid + .Invalid {visibility:hidden;}
+
+            </style>
+        </head>
+    
+        <body>
+            <form action="Thanks.html" method="post">
+             <input type="hidden" name="UID" value="id10"> 
+             <label for="fn">First Name</label>
+             <input type="text" required  tabindex="1"  placeholder="First Name">
+             <span class="Invalid" style="color:red;">
+                Not valid!  </span><br><br>
+                   <!-- <span class="divInvalid">
+                        Not Valid!
+                    </span><br><br>-->
+             <label for="fn">Last Name</label>
+             <input type="text" required tabindex="4" placeholder="Last Name">
+             <span class="Invalid" style="color:red;">
+                Not valid!   </span><br><br>
+             <label for="fn">E-Mail </label>
+              &nbsp; &nbsp;&nbsp; &nbsp;<input type="email" required  tabindex="3" placeholder="E-mail">
+              <span class="Invalid" style="color:red;">
+                Not valid! </span><br><br>
+              <label for="fn">Password</label>
+              &nbsp;&nbsp;<input type="password"  tabindex="2"  placeholder="Password"><br><br>
+              <label for="fn">Birth Date</label>&nbsp;
+             <input type="date"  tabindex="5" required><br><br>
+             <label for="fn">User Picture </label>
+             <input type="file" name="file"  tabindex="6"><br><br>
+             <label for="fn">Gender</label>
+             <input type="radio" name="group1" value="m" tabindex="7" >Male 
+                <input type="radio" name="group1" value="f" tabindex="8"> Female<br><br>
+                <label for="fn">Faculty</label>
+            <select>
+                <option value=""></option>
+                <option value="M">Minia</option>
+                <option value="C">Cairo</option>
+                <option value="A">Assiut</option>
+            </select>
+            <br><br>
+            <label for="fn">Interests</label>
+            <br>
+                <input type="checkbox" name="option1" value="1">Programming<br>
+                <input type="checkbox" name="option1" value="1">reading<br>
+                <input type="checkbox" name="option1" value="1">swimming<br><br>
+                <label for="fn">About you</label>
+            <br><textarea cols="30" rows="4" name="myname"  placeholder="Some about you"></textarea><br><br>
+            <a href="terms.html"><input type="checkbox" name="option1" value="1">I agreed to terms and condition<br><br></a>
+            <input type="submit" value="Submit"><br><br>
+            <input type="RESET" value="Reset!"><br><br>
+            </form>
+        </body>
+    </html>
